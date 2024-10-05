@@ -1,0 +1,18 @@
+.main-nav {
+    background: #000;
+    color: white;
+
+}
+
+.complete-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.home-btn{
+    border-radius: 100%;
+    
+}
+.search-input{
+    border-right: 3px solid black;
+    
+}
