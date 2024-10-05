@@ -9,7 +9,11 @@ const Navbar = () => {
                 <nav className='py-4 px-3 complete-nav flex  '>
                     <div className=' left-nav'>
                         <Link href="/">
-                            <i class="ri-spotify-fill text-4xl cursor-pointer"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className='text-white' fill="black">
+  
+  <path d="M3 10L12 3l9 7v10a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-6h-4v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10z"/>
+</svg>
+
 
                         </Link>
                     </div>
@@ -38,7 +42,7 @@ const Navbar = () => {
                     </div>
 
                 </nav>
-            </section>
+            </section>  
         </div>
     )
 }
