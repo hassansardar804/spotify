@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import './Navbar.css'
 
@@ -9,10 +10,7 @@ const Navbar = () => {
                 <nav className='py-4 px-3 complete-nav flex  '>
                     <div className=' left-nav'>
                         <Link href="/">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className='text-white' fill="black">
-  
-  <path d="M3 10L12 3l9 7v10a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-6h-4v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10z"/>
-</svg>
+                            <i class="ri-spotify-fill text-4xl ms-4"></i>
 
 
                         </Link>
@@ -38,11 +36,11 @@ const Navbar = () => {
                     </div>
                     <div className=' right-nav '>
                         <Link href="SignUp" className='font-bold text-[#c6c4c4] px-3  hover:text-white  transition-colors duration-1000 ease-in-out transform hover:scale-105'>SignUp</Link>
-                        <button className='mx-3 px-5 py-2 bg-white font-bold text-black rounded-full' >Login</button>
+                        <Link href="/Login" className='mx-3 px-5 py-2 bg-white font-bold text-black rounded-full' >Login</Link>
                     </div>
 
                 </nav>
-            </section>  
+            </section>
         </div>
     )
 }

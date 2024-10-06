@@ -1,12 +1,17 @@
+"use client"
+import Link from 'next/link'
 import React from 'react'
 import 'remixicon/fonts/remixicon.css'
 
 
 
-const SignUpSignUp = () => {
+const SignUp = () => {
     return (
         <div>
-            <div className="min-h-screen flex items-center justify-center bg-[#121212] text-white">
+            <div className=" min-h-screen flex items-center  justify-center bg-[#121212] text-white">
+                <head>
+                    <title>Register to Spotify</title>
+                </head>
                 <div className="w-full max-w-md p-8 space-y-8">
 
                     <div className="flex justify-center mb-6">
@@ -22,7 +27,7 @@ const SignUpSignUp = () => {
 
                     {/* Email Input */}
                     <div className="mt-8">
-                        <label className="block text-sm font-semibold mb-2" htmlFor="email">
+                    <label className="block text-sm font-semibold mb-2" htmlFor="email">
                             Email address
                         </label>
                         <input
@@ -49,9 +54,9 @@ const SignUpSignUp = () => {
 
                     {/* Signup with Google */}
                     <div className="mt-4">
-                        <a className="w-full py-2 flex items-center justify-center space-x-2 border rounded-full cursor-pointer  text-white hover: focus:outline-none focus:ring-2 focus:ring-gray-500">
-                            <div className='social-signup'>
-                                <i className="ri-google-fill text-green-500 text-3xl"></i>
+                        <a className="w-full py-3 relative flex items-center justify-center space-x-2 border rounded-full cursor-pointer  text-white hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500">
+                            <div className='social-signup '>
+                                <i className="ri-google-fill absolute left-3 top-2    text-green-500 text-3xl"></i>
                                 <span>Sign up with Google</span>
                             </div>
 
@@ -61,9 +66,9 @@ const SignUpSignUp = () => {
                     {/* Signup with Facebook */}
                     <div className="mt-4">
 
-                        <a className="w-full py-2 flex items-center justify-center space-x-2 rounded-full border text-white hover: focus:outline-none  focus:ring-2 ">
+                        <a className="w-full py-3 flex items-center relative justify-center space-x-2 rounded-full border text-white hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 ">
                             <div className='social-signup '>
-                                <i className="ri-facebook-circle-fill text-green-500 text-3xl"></i>
+                                <i className="ri-facebook-circle-fill absolute left-3 top-2 text-green-500 text-3xl"></i>
                                 <span>Sign up with Facebook</span>
                             </div>
 
@@ -72,13 +77,31 @@ const SignUpSignUp = () => {
 
 
                     <div className="mt-2">
-                        <a className="w-full py-2 flex items-center justify-center space-x-2  rounded-full border     text-white hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500">
+                        <a className="w-full  py-3 relative flex items-center justify-center space-x-2  rounded-full border     text-white hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500">
                             <div className='social-signup'>
 
-                                <i className="ri-apple-fill text-green-500 text-3xl"></i>
+                                <i className="ri-apple-fill text-green-500 absolute left-3 top-2 text-3xl"></i>
                                 <span>Sign up with Apple</span>
                             </div>
                         </a>
+                    </div>
+
+                    <div className="flex items-center justify-center my-6">
+                        <hr className="w-full border-gray-600" />
+
+                        <hr className="w-full border-gray-600" />
+                    </div>
+
+
+                    <div className='already'>
+                        <p className='text-center'>Already have have an account? <Link href="/Login"><span className='underline'>Login Here</span></Link> </p>
+
+                    </div>
+
+                    <div className='CAPTCHA'>
+                        <p className='text-sm text-center'>This site is protected by reCAPTCHA and the Google</p>
+                        <p className='text-sm text-center'><Link href="" className='underline'><span>Privacy Policy</span></Link> and  <Link href="" className='underline'><span>Terms of Service</span></Link> apply.</p>
+
                     </div>
                 </div>
             </div>
