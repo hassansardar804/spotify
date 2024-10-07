@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    background-color: black;
+}
+
+/* @layer utilities {
+    .home-btn {
+        @apply rounded-full flex items-center justify-center
+    }
+} */
