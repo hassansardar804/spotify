@@ -5,6 +5,10 @@ import Link from "next/link";
 
 import { FaSearch, FaSpotify, GrHomeRounded, PiBrowsersLight } from "react-icons/fa";
 
+
+
+
+
 const Navbar = () => {
   return (
     <div className="main-nav">
